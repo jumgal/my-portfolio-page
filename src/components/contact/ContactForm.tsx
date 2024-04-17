@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
 import { Typography } from "@mui/material";
+import AlertComponent from "../alert/AlertComponent";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -16,6 +17,8 @@ function ContactForm() {
 
   const [formError, setFormError] = useState<boolean | undefined>(false);
 
+  const [successMessage, setSuccessMessage] = useState<boolean | undefined>();
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setFormError(undefined);
@@ -24,6 +27,14 @@ function ContactForm() {
     return () => clearTimeout(timer);
   }, [formError]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSuccessMessage(undefined);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [successMessage]);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -31,7 +42,7 @@ function ContactForm() {
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     // Do something with the form data, like sending it to an API
-    console.log(username, email, message)
+    console.log(username, email, message);
     if (!username || !email || !message) {
       setFormError(true);
       setFormData({
@@ -42,6 +53,7 @@ function ContactForm() {
       return;
     }
 
+    setSuccessMessage(true);
 
     setFormData({
       username: "",
@@ -110,6 +122,8 @@ function ContactForm() {
           Please fill in all form fields
         </Typography>
       )}
+
+      {successMessage && <AlertComponent />}
       <Button
         sx={{
           color: "#fff",
