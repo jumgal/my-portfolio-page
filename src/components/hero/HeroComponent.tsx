@@ -59,7 +59,7 @@ export default function HeroComponent({}: Props) {
         sx={{
           display: { xs: "none", md: "block" },
           backgroundImage: {
-            xs: `url(./src/assets/images/software-developer.jpg)`,
+            xs: `url(./images/software-developer.jpg)`,
           },
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
