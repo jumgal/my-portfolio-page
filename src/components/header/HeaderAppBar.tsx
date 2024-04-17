@@ -11,8 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import MenuItem from "@mui/material/MenuItem";
 import { SvgIcon } from "@mui/material";
 import LinkedinIcon from "../svg-icons/LinkedinIcon";
-import { Link as RouterLink } from "react-router-dom";
-import Link from "@mui/material/Link";
 
 const pages = ["Products", "Pricing", "Blog"];
 
