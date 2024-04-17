@@ -1,6 +1,6 @@
 import React from "react";
 
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import AppLayout from "./ui/AppLayout";
 import HomePage from "../pages/home/HomePage";
 import AboutPage from "../pages/about/AboutPage";
@@ -27,6 +27,11 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactPage />,
       },
+      {
+        path: "*",
+        element: <Navigate to="/" />,
+      },
+      
       {
         path: "/playground",
         element: (
