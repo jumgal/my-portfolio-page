@@ -30,7 +30,7 @@ export default function HeroComponent({}: Props) {
             Nice to meet you! <br />
             I'm{" "}
             <span style={{ borderBottom: "0.2rem solid #4ee1a0" }}>
-              Jumgal Arymbaev.
+              James Jumgal.
             </span>
           </Typography>
         </Grid>
