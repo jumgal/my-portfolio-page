@@ -30,7 +30,7 @@ export default function HeroComponent({}: Props) {
             Nice to meet you! <br />
             I'm{" "}
             <span style={{ borderBottom: "0.2rem solid #4ee1a0" }}>
-              James Jumgal.
+              Jumgal.
             </span>
           </Typography>
         </Grid>
@@ -41,9 +41,8 @@ export default function HeroComponent({}: Props) {
               marginBottom: "1.5rem",
             }}
           >
-            Full Stack Developer with 5 plus years of expertise in JavaScript,
-            TypeScript, Python, Java, Spring Boot, Devops, SQL, React, Redux,
-            CSS, and HTML.
+            Full Stack Developer with 4 plus years of expertise in JavaScript,
+            TypeScript, Python, Devops, SQL, React, Redux, CSS, and HTML.
           </Box>
         </Grid>
         <Grid item sx={{ marginBottom: "1rem" }}>
