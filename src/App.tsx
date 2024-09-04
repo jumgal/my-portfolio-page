@@ -6,10 +6,10 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>Jumgal Arymbaev. A Software Developer based in the USA.</title>
+        <title>Jumgal Arymbaev | A Software Developer based in the USA.</title>
         <meta
           name="description"
-          content="A description of my personal website"
+          content="Jumgal Arymbaev's personal website"
         />
       </Helmet>
       <RouterProvider router={router} />

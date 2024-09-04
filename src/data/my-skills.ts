@@ -6,19 +6,19 @@ export const mySkills = [
   },
   {
     skill: "Javascript",
-    yearsOfExperience: 5,
+    yearsOfExperience: 4,
   },
   {
     skill: "React",
-    yearsOfExperience: 5,
+    yearsOfExperience: 4,
   },
   {
     skill: "CSS",
-    yearsOfExperience: 5,
+    yearsOfExperience: 4,
   },
   {
     skill: "HTML",
-    yearsOfExperience: 5,
+    yearsOfExperience: 4,
   },
   {
     skill: "Python",
